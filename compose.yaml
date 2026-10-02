@@ -1,0 +1,7 @@
+services:
+  load-lab:
+    build: .
+    ports:
+      - "8088:8088"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
